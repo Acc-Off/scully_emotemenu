@@ -137,7 +137,7 @@ function RegisterMenu()
                 local command = Config.emoteCommands[1]
 
                 emotes[index] = emote
-                emoteOptions[index] = { label = emote.Label, description = ('/%s %s - %s'):format(command, emote.Command, locale('hold_to_preview')) }
+                emoteOptions[index] = { label = emote.Label, description = ('/%s %s - %s'):format(command, emote.Command, locale('hold_to_preview') .. (emote.CanGroupEmote and locale('hold_to_group_emote') or '')) }
             end
         end
 
@@ -178,7 +178,7 @@ function RegisterMenu()
                         local command = Config.emoteCommands[1]
 
                         emotes[index] = emote
-                        foundEmotes[index] = { label = emote.Label, description = ('/%s %s - %s'):format(command, emote.Command, locale('hold_to_preview')) }
+                        foundEmotes[index] = { label = emote.Label, description = ('/%s %s - %s'):format(command, emote.Command, locale('hold_to_preview') .. (emote.CanGroupEmote and locale('hold_to_group_emote') or '')) }
                     end
                 end
 

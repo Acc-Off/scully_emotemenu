@@ -249,6 +249,16 @@ You can add custom emotes to the menu by using the `addEmoteToMenu` and `addEmot
 **Description:** If you would like an emote to be a synchronized emote add this to the emote table, keep in mind you'll also need to define the OtherEmote in the Options table.
 </details>
 
+<details>
+<summary>CanGroupEmote</summary>
+<br>
+
+**Key:** `CanGroupEmote = true`
+<br>
+
+**Description:** If you would like an emote to be usable as a group emote add this to the emote table.
+</details>
+
 # Disclaimer & Credits
 
 All custom animations were added with permission from the creators or were taken from open source projects. Credit to the following people for giving permission to use their animations / props:
